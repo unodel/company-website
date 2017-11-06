@@ -1,0 +1,23 @@
+:host {
+    display: flex;
+    flex-direction: column;
+  }
+
+.section1 {
+  margin-top: 16px;
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.section1 .section1-icons {
+  display: flex;
+  justify-content: center;
+  /* flex-grow: 1; */
+}
+
+.section1 .section1-icons .section1-icon {
+  font-size: 150px;
+  margin: 18px;
+}

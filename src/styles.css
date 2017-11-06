@@ -1,1 +1,55 @@
+/* 
+MDC Theme is a foundational module that themes MDC Web components. The colors in this module are derived from three theme colors:
+
+Primary: the primary color used in your application, applies to a number of UI elements.
+Secondary: the secondary color used in your application, applies to a number of UI elements. (Previously called “accent”.)
+Background: the background color for your application, aka the color on top of which your UI is drawn.
+and five text styles:
+
+Primary: used for most text
+Secondary: used for text which is lower in the visual hierarchy
+Hint: used for text hints, such as those in text fields and labels
+Disabled: used for text in disabled components and content
+Icon: used for icons
+ */
+
+
 /* You can add global styles to this file, and also import other style files */
+:root {
+    /* https://material.io/components/web/catalog/theme/ */
+    /* https://material.io/color/#!/?view.left=0&view.right=0&primary.color=212121&secondary.color=1E88E5&primary.text.color=ffffff */
+    --mdc-theme-primary:#212121;
+    --mdc-theme-primary-light: #484848;
+    --mdc-theme-primary-dark: #000000;
+    --mdc-theme-secondary : #1e88e5;
+    --mdc-theme-secondary-light: #6ab7ff;
+    --mdc-theme-secondary-dark: #005cb2;
+    --mdc-theme-background:#fff;
+    --mdc-theme-text-primary-on-primary: #ffffff;
+    --mdc-theme-text-primary-on-light: #ffffff;
+    --mdc-theme-text-primary-on-dark: #ffffff;
+}
+
+body{
+    margin: 0;
+}
+
+html, body, app-root {
+    height: 100%;
+}
+
+.container {
+    max-width: 1312px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.techs-logos img{
+    margin: 8px 24px;
+}
+
+.techs-logos path{
+    fill: red !important;
+}
