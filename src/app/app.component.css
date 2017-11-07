@@ -21,3 +21,19 @@
   font-size: 150px;
   margin: 18px;
 }
+
+.techs-logos img{
+  margin: 8px 24px;
+}
+
+.techs-logos path{
+  fill: red !important;
+}
+
+.features{
+  margin: 40px auto;
+}
+
+.open-standards{
+  margin-left: 10%;
+}

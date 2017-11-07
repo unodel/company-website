@@ -65,11 +65,3 @@ and (max-device-width : 480px) {
     margin-left: auto;
     margin-right: auto;
   }
-
-.techs-logos img{
-    margin: 8px 24px;
-}
-
-.techs-logos path{
-    fill: red !important;
-}
