@@ -1,6 +1,6 @@
 # Official framework image. Look for the different tagged releases at:
 # https://hub.docker.com/r/library/node/tags/
-image: node:6
+image: node:carbon
 
 before_script:
   - npm install
@@ -14,3 +14,8 @@ cache:
 test:lint:
   script:
     - npm run lint
+
+job1:
+  stage: build
+  script:
+    - npm run build
