@@ -19,3 +19,13 @@ job1:
   stage: build
   script:
     - npm run build
+    
+deploy_staging:
+  stage: deploy
+  script:
+    - npm run build
+  environment:
+    name: staging
+    url: http://staging.unodel.com
+  only:
+    - master
