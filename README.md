@@ -1,4 +1,4 @@
-# MyApp
+# MyApp  [![Build Status](https://travis-ci.org/unodel/webapp.svg?branch=master)](https://travis-ci.org/unodel/webapp)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
