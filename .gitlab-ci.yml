@@ -26,6 +26,5 @@ deploy_staging:
     - npm run build
   environment:
     name: staging
-    url: http://staging.unodel.com
   only:
     - master
