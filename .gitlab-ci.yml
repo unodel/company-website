@@ -4,7 +4,6 @@ image: node:carbon
 
 before_script:
   - npm install
-  - npm run build
 
 # This folder is cached between builds
 # http://docs.gitlab.com/ce/ci/yaml/README.html#cache
@@ -19,17 +18,17 @@ test:lint:
 job1:
   stage: build
   script:
-  - "echo already build in before_script"
+  - npm run build
 
-deploy_staging:
+pages:
   stage: deploy
   script:
-    - echo "deploy commands, nothing"
-  environment:
-    name: staging
-    url: http://staging.unodel.com
+  - npm run build
+  - mkdir .public
+  - cp -r * .public
+  - mv .public public
   artifacts:
     paths:
-      - dist
+    - public
   only:
-    - master
+  - master
