@@ -2058,7 +2058,6 @@ $metadata.exp({ metadata: function metadata(metadataKey, metadataValue) {
 /***/ "../../../../webpack/buildin/global.js":
 /***/ (function(module, exports) {
 
-	return this;
 var g;
 
 // This works in non-strict mode
