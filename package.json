@@ -6,7 +6,7 @@
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build",
-        "build:pages": "ng build --output-path=docs --aot=true",
+        "build:pages": "ng build --output-path=docs --aot=true --delete-output-path=false",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e"
