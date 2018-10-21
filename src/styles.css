@@ -16,52 +16,64 @@ Icon: used for icons
 
 /* You can add global styles to this file, and also import other style files */
 :root {
-    /* https://material.io/components/web/catalog/theme/ */
-    /* https://material.io/color/#!/?view.left=0&view.right=0&primary.color=212121&secondary.color=1E88E5&primary.text.color=ffffff */
-    --mdc-theme-primary:#212121;
-    --mdc-theme-primary-light: #484848;
-    --mdc-theme-primary-dark: #000000;
-    --mdc-theme-secondary : #1e88e5;
-    --mdc-theme-secondary-light: #6ab7ff;
-    --mdc-theme-secondary-dark: #005cb2;
-    --mdc-theme-background:#fff;
-    --mdc-theme-text-primary-on-primary: #ffffff;
-    --mdc-theme-text-primary-on-light: #ffffff;
-    --mdc-theme-text-primary-on-dark: #ffffff;
+  /* https://material.io/components/web/catalog/theme/ */
+  /* https://material.io/color/#!/?view.left=0&view.right=0&primary.color=212121&secondary.color=1E88E5&primary.text.color=ffffff */
+  --mdc-theme-primary: #212121;
+  --mdc-theme-primary-light: #484848;
+  --mdc-theme-primary-dark: #000000;
+  --mdc-theme-secondary: #1e88e5;
+  --mdc-theme-secondary-light: #6ab7ff;
+  --mdc-theme-secondary-dark: #005cb2;
+  --mdc-theme-background: #fff;
+  --mdc-theme-text-primary-on-primary: #ffffff;
+  --mdc-theme-text-primary-on-light: #ffffff;
+  --mdc-theme-text-primary-on-dark: #ffffff;
 }
 
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-html, body, app-root {
-    height: 100%;
+html,
+body,
+app-root {
+  height: 100%;
 }
 
 /* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-/* Styles */
+@media only screen and (min-width : 1224px) {
+  /* Styles */
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-/* Styles */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  /* Styles */
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-/* Styles */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {}
+
+@media (max-width: 599px) {
+  .top-contact-us {
+    display: none;
+  }
 }
 
 .container {
-    max-width: 1312px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  max-width: 1312px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.process .process-block {
+  /* display: inline-block; margin: 8px; */
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.process .process-block span {
+  margin: 0 .3rem;
+}
